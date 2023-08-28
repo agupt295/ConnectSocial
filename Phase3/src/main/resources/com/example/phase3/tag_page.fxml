@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="mainAnchorPane" prefHeight="900.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.phase3.Tag_Page_controller">
+   <children>
+      <VBox layoutY="1.0" prefHeight="901.0" prefWidth="899.0">
+         <children>
+            <ToolBar prefHeight="48.0" prefWidth="899.0">
+              <items>
+                <Button fx:id="back" mnemonicParsing="false" onAction="#back" text="Back" />
+              </items>
+            </ToolBar>
+            <HBox prefHeight="37.0" prefWidth="899.0">
+               <children>
+                  <HBox prefHeight="157.0" prefWidth="533.0">
+                     <children>
+                        <TextField fx:id="searchTag" prefHeight="30.0" prefWidth="313.0" />
+                        <Button fx:id="findPhotos" mnemonicParsing="false" onAction="#findTaggedPhotos" prefHeight="31.0" prefWidth="134.0" text="Find tagged Photos" />
+                        <Button fx:id="clear1" mnemonicParsing="false" onAction="#clear1" prefHeight="31.0" prefWidth="54.0" text="Clear" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="56.0" prefWidth="368.0">
+                     <children>
+                        <RadioButton fx:id="viewMyPhotos" mnemonicParsing="false" prefHeight="30.0" prefWidth="153.0" text="View My Photos" />
+                        <RadioButton fx:id="viewAllPhotos" mnemonicParsing="false" prefHeight="30.0" prefWidth="237.0" text="View All Photos" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <ScrollPane fx:id="viewTaggedPhotos" prefHeight="316.0" prefWidth="899.0" />
+            <HBox prefHeight="83.0" prefWidth="899.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="108.0" text="Popular Tags" />
+                  <ListView fx:id="viewPopularTagList" prefHeight="200.0" prefWidth="200.0" />
+                  <Button fx:id="showPopularTag" mnemonicParsing="false" onAction="#viewPopularTag" prefHeight="31.0" prefWidth="94.0" text="View Photos" />
+                  <Button fx:id="clear" mnemonicParsing="false" onAction="#clear" prefHeight="31.0" prefWidth="72.0" text="Clear" />
+               </children>
+            </HBox>
+            <ScrollPane fx:id="viewPopularPhotos" prefHeight="428.0" prefWidth="899.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+              </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

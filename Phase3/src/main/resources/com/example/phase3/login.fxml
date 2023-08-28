@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="mainAnchorPane" prefHeight="900.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.phase3.Login_controller">
+   <children>
+      <VBox layoutX="83.0" layoutY="90.0" prefHeight="422.0" prefWidth="663.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="603.0" text="Email" />
+            <TextField fx:id="email" prefHeight="34.0" prefWidth="537.0" />
+            <Label prefHeight="32.0" prefWidth="602.0" text="Password" />
+            <PasswordField fx:id="password" prefHeight="38.0" prefWidth="537.0" />
+            <Label fx:id="warning" prefHeight="39.0" prefWidth="600.0" text="Enter all the details to continue" />
+            <Button fx:id="login" mnemonicParsing="false" onAction="#profile" prefHeight="37.0" prefWidth="62.0" text="Login" />
+            <Button fx:id="signin" mnemonicParsing="false" onAction="#sign_in" prefHeight="38.0" prefWidth="251.0" text="Don't have an account? Sign-in" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

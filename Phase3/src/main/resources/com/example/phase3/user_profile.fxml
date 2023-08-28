@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchorPane" prefHeight="900.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.phase3.User_Profile_controller">
+   <children>
+      <VBox prefHeight="1010.0" prefWidth="900.0">
+         <children>
+            <ToolBar prefHeight="44.0" prefWidth="900.0">
+              <items>
+                <Button fx:id="logout" mnemonicParsing="false" onMouseClicked="#login" text="Logout" />
+              </items>
+            </ToolBar>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="275.0" prefWidth="458.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <ImageView fx:id="viewTaggedPhotos" fitHeight="74.0" fitWidth="88.0" onMouseClicked="#goToTag" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Images/add_tag.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Tagged photos" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <ImageView fx:id="addFriend" fitHeight="74.0" fitWidth="87.0" onMousePressed="#addFriend" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Images/add_friend.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Add Friend" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <ImageView fx:id="addAlbum" fitHeight="73.0" fitWidth="85.0" onMouseClicked="#addAlbum" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Images/add_album.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Add Album" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <ImageView fx:id="addImage" fitHeight="74.0" fitWidth="90.0" onMouseClicked="#addImage" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Images/add_image.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Add Image" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="203.0" prefWidth="600.0">
+                           <children>
+                              <HBox prefHeight="282.0" prefWidth="600.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <ImageView fitHeight="167.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../Images/profile.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="name" prefHeight="17.0" prefWidth="288.0" text="{Name}" />
+                                       </children>
+                                    </VBox>
+                                    <Pane fx:id="viewFriend" onMouseClicked="#viewFriendsList" prefHeight="203.0" prefWidth="734.0">
+                                       <children>
+                                          <Label layoutX="26.0" layoutY="75.0" prefHeight="58.0" prefWidth="134.0" text="View friends">
+                                             <font>
+                                                <Font size="23.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="275.0" prefWidth="387.0">
+                     <children>
+                        <Label prefHeight="37.0" prefWidth="388.0" text="Top Contributors">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ListView fx:id="viewTopContributors" prefHeight="226.0" prefWidth="387.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <ListView fx:id="albumList" prefHeight="282.0" prefWidth="900.0" />
+            <HBox prefHeight="181.0" prefWidth="900.0">
+               <children>
+                  <Button fx:id="open" mnemonicParsing="false" onAction="#openAlbum" prefHeight="38.0" prefWidth="77.0" text="Open" />
+                  <Button fx:id="delete" mnemonicParsing="false" onAction="#deleteAlbum" prefHeight="38.0" prefWidth="77.0" text="Delete" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
