@@ -1,4 +1,4 @@
-package com.example.phase3.Controllers;
+package com.example.phase3.Controllers.User_controller;
 
 import com.example.phase3.Classes.Users;
 import com.example.phase3.Classes.Photos;

@@ -3,7 +3,7 @@ import com.example.phase3.Classes.Users;
 import java.sql.*;
 
 import Database.DatabaseConnection;
-import com.example.phase3.Controllers.User_Profile_controller;
+import com.example.phase3.Controllers.User_controller.User_Profile_controller;
 import com.example.phase3.RunApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

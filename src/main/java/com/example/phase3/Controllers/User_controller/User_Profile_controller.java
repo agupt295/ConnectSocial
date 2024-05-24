@@ -1,5 +1,9 @@
-package com.example.phase3.Controllers;
+package com.example.phase3.Controllers.User_controller;
 
+import com.example.phase3.Controllers.Friend_controller.FriendList_controller;
+import com.example.phase3.Controllers.AddingEntities_controller.Add_Friend_controller;
+import com.example.phase3.Controllers.AddingEntities_controller.Add_Album_controller;
+import com.example.phase3.Controllers.AddingEntities_controller.Add_Image_controller;
 import com.example.phase3.Classes.Users;
 import com.example.phase3.Classes.Photos;
 import com.example.phase3.Classes.Albums;

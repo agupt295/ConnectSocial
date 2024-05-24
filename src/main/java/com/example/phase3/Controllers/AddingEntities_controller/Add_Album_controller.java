@@ -1,8 +1,9 @@
-package com.example.phase3.Controllers;
+package com.example.phase3.Controllers.AddingEntities_controller;
 
 import com.example.phase3.Classes.Users;
 import com.example.phase3.Classes.Albums;
 import Database.DatabaseConnection;
+import com.example.phase3.Controllers.User_controller.User_Profile_controller;
 import com.example.phase3.RunApplication;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

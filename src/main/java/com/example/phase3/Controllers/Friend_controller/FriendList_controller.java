@@ -1,8 +1,9 @@
-package com.example.phase3.Controllers;
+package com.example.phase3.Controllers.Friend_controller;
 
 import com.example.phase3.Classes.Users;
 import com.example.phase3.Classes.Albums;
 import Database.DatabaseConnection;
+import com.example.phase3.Controllers.User_controller.User_Profile_controller;
 import com.example.phase3.RunApplication;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
