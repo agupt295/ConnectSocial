@@ -1,4 +1,4 @@
-package com.example.phase3;
+package com.example.phase3.Classes;
 
 import java.util.ArrayList;
 

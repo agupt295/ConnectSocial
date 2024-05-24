@@ -1,5 +1,7 @@
-package com.example.phase3;
+package com.example.phase3.Controllers;
 
+import com.example.phase3.Classes.Users;
+import com.example.phase3.Classes.Photos;
 import Database.DatabaseConnection;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

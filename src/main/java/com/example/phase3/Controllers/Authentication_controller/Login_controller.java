@@ -1,6 +1,10 @@
-package com.example.phase3;
+package com.example.phase3.Controllers.Authentication_controller;
 
+import com.example.phase3.Classes.Users;
+import com.example.phase3.Classes.Albums;
 import Database.DatabaseConnection;
+import com.example.phase3.Controllers.User_Profile_controller;
+import com.example.phase3.RunApplication;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;

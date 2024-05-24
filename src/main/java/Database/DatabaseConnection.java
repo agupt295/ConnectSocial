@@ -1,7 +1,7 @@
 package Database;
-import com.example.phase3.Albums;
-import com.example.phase3.Photos;
-import com.example.phase3.Users;
+import com.example.phase3.Classes.Albums;
+import com.example.phase3.Classes.Photos;
+import com.example.phase3.Classes.Users;
 import javafx.scene.image.Image;
 import java.io.FileInputStream;
 import java.io.InputStream;

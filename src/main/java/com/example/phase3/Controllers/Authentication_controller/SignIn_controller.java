@@ -1,7 +1,10 @@
-package com.example.phase3;
+package com.example.phase3.Controllers.Authentication_controller;
+import com.example.phase3.Classes.Users;
 import java.sql.*;
 
 import Database.DatabaseConnection;
+import com.example.phase3.Controllers.User_Profile_controller;
+import com.example.phase3.RunApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
