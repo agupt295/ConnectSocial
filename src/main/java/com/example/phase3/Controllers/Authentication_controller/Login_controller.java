@@ -74,6 +74,7 @@ public class Login_controller {
                     password.setText(null);
                 }
             }
+            
         } catch(Exception e){
             System.out.println(e);
         }
