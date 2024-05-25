@@ -19,3 +19,7 @@ PostgreSQL is a powerful open-source relational database management system that 
 ## Database Implementation
 
 Please note that the database used in this project has been implemented locally and may not be directly testable in its current state. However, for your reference and understanding, I have provided images showcasing the database schema and structure.
+
+### ER (Entity Relationship) diagram
+<img width="905" alt="Screenshot 2024-05-24 at 6 16 24 PM" src="https://github.com/agupt295/ConnectSocial/assets/118144312/8c519663-0c79-484d-a97b-e97ab528b76f">
+
